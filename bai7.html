@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguyen van hien</title>
+</head>
+<body>
+<script type="text/javascript">
+    var sec =60;
+    var    min = 9;
+    function demNguoc() {
+        setInterval(function () {
+            sec--;
+            if (sec==0){
+                min--;
+                if(min>0){
+                    sec=59;
+                }
+            }
+            if (sec<10) {
+                sec = "0" + sec;
+            }
+            if (min<0 && sec<0){
+                clearInterval();
+            } else {
+                console.log(min+":"+sec);
+            }
+        },1000);
+    }
+    demNguoc()
+</script>
+</body>
+</html>
