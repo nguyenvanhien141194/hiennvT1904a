@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuyen Van Hien</title>
+    <link rel="stylesheet" type="text/css" href="css/bai8css.css">
+</head>
+<body>
+    <div id="hien">
+        <header class="containe">
+            <div class="containe1">
+                <form method="get" action="">
+                    <input class="iph1" type="text" name="ip1" value="" placeholder="search">
+                </form>
+            </div>
+            <div id="containe2">
+                    <div class="con1">
+                        <b>What's New</b>
+                    </div>
+                    <div class="con1">
+                        <b>Women</b>
+                    </div>
+                    <div class="con1">
+                        <b>Men</b>
+                    </div>
+                    <div class="con1">
+                        <b>Gear</b>
+                    </div>
+                    <div class="con1">
+                        <b>Training</b>
+                    </div>
+                    <div class="con1">
+                        <b>Sale</b>
+                    </div>
+                    <div class="con1">
+                        <b>All hot deals</b>
+                    </div>
+                    <div class="con1">
+                        <b>Bestseller Deals</b>
+                    </div>
+                </div>
+        </header>
+        <section class="section">
+            <div id="section1">
+                <p>Home > Didi Sport Watch</p>
+                <b class="b1">78,26% OFF</b>
+                <div id="b2"><img src="img/anhdongho.png"></div>
+            </div>
+
+            <div id="section2">
+                <div id="tion2">
+                    <div id="tion2_1">
+                        <p class="p1">Didi Sport Watch</p>
+                    </div>
+                    <div id="titonn">
+                        <div id="titonn1"><p>2 Reveiws</p></div>
+                        <div id="titonn2"><p>Add Your Reveiws</p></div>
+                    </div>
+                    <div id="titonn3">
+                        <div id="titonn3_1">
+                            <p class="titonn3_2">$14.13</p>
+                            <p class="titonn3_3">OUT OF STOCK</p>
+                        </div>
+                    </div>
+                </div>
+                    <div id="tion3">
+                        <div class="tion3_1">
+                            <div class="tion3_2">
+                                <p style="color: #787878;font-size: 20px">Limited Time Remaining</p>
+                            </div>
+                            <div class="tion4">
+                                <div class="H" style="margin-left: 20px"><p id="dongho1" class="a"></p><br/><p class="b">Day</p></div>
+                                <div class="H"><p id="dongho2" class="a"></p><br/><p class="b">Hours</p></div>
+                                <div class="H"><p id="dongho3" class="a"></p><br/><p class="b">Min</p></div>
+                                <div class="H"><p id="dongho4" class="a"></p><br/><p class="b">Sec</p></div>
+                            </div>
+                         </div>
+                    </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+        <script>
+            function dongho() {
+                var day=19;
+                var hourse = 23;
+                var min = 59;
+                var sec = 59;
+                var a = setInterval(function () {
+                    sec--;
+                    if (sec < 0) {
+                        min--;
+                        if (min > 0) {
+                            sec = 59;
+                        }
+                        if (min < 0) {
+                            hourse--;
+                            if (hourse<0){
+                                day--;
+                            }
+                        }
+                    }
+
+                    if (sec < 10) {
+                        sec = "0" + sec;
+                    }
+                    if (min < 10) {
+                        sec = "0" + min;
+                    }
+                    if (hourse<10){
+                        hourse="0"+hourse;
+                    }
+                    if (day<10){
+                        day="0"+day;
+                    }
+                    if (min == 0 && sec == 0&&hourse==0&&day==0) {
+                        clearInterval(a);
+                    } else {
+                        document.getElementById("dongho1").innerHTML = day;
+                        document.getElementById("dongho2").innerHTML = hourse;
+                        document.getElementById("dongho3").innerHTML = min;
+                        document.getElementById("dongho4").innerHTML = sec;
+                    }
+                }, 10);
+            }
+            dongho();
+        </script>
+</body>
+</html>
