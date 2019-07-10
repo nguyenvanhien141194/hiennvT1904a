@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    float: none;
+}
+header{
+    width: 100%;
+    background-color: white;
+}
+.contact{
+    width: 100%;
+    border-bottom: 1px solid #edeff1;
+    color: #34404b;
+    font-size: 12px;
+}
+div.contact > div.container{
+    display: flex;
+    align-items: center;
+    height: 61px;
+}
+.email{
+    margin-right: 15px;
+}
+.icon{
+    margin-left: auto;
+}
+.social > img {
+    margin-left: 10px;
+}
+.containe{
+    width: 100%;
+    height: 50px;
+
+}
+.con1{
+    float: left;
+    margin-left: 150px;
+    width: 60%;
+    height: 50px;
+
+}
+.c1{
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+#content{
+    width: 100%;
+    margin-top: 100px;
+}
+.box{
+    width: 100%;
+    float: left;
+}
+.con2{
+    width: 470px;
+    float: left;
+    padding: 0 80px;
+}
+.con3{
+    width: 100%;
+    height: 325px;
+    float: left;
+    text-align: center;
+}
+.c3all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.con4{
+    width: calc(100% - 470px);
+    float: left;
+}
+.detail1{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #edeff1;
+}
+div.detail1 > p:nth-child(1){
+    font-size: 52px;
+    color: #ff5912;
+    font-weight: bold;
+}
+div.detail1 > p:nth-child(2){
+    font-size: 18px;
+    color: #3c4751;
+    font-weight: bold;
+    line-height: 3.0;
+    padding-bottom: 15px;
+}
+div.detail1 > p:nth-child(3){
+    font-size: 18px;
+    color: #495662;
+    line-height: 2.0;
+}
+div.detail1 > p:nth-child(4){
+    width: 60%;
+    font-size: 18px;
+    color: #495662;
+    line-height: 2.0;
+}
+.detail2{
+    width: 100%;
+    height: 80px;
+    color: #34404b;
+    border-bottom: 1px solid #edeff1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail2 > div > span:nth-child(1){
+    margin-right: 20px;
+}
+.detail2 > div > span:nth-child(2){
+    letter-spacing: 5px;
+}
+.detail2 > div > span:nth-child(2) > span{
+    color: #ff5912;
+}
+.detail3 {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.detail3 > span{
+    font-weight: bold;
+    color: #34404b;
+}
+.detail3 > div > img {
+    margin-right: 15px;
+}
+div.detail3 > div > span:nth-child(4){
+    color: #ffffff;
+    background-color: #ff5912;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+.block-bottom{
+    width: 100%;
+    margin-top: 100px;
+    float: left;
+    background-color: #f4f6f8;
+}
+.related-tittle{
+    text-align: center;
+    padding: 100px 0 80px 0;
+}
+div.related-tittle > span{
+    font-size: 28px;
+    font-weight: bold;
+}
+div.related-tittle > p{
+    padding-top: 20px;
+    font-size: 16px;
+    color: #495662;
+}
+div.related-tittle :nth-child(1){
+    color: #ff5912;
+}
+div.related-tittle :nth-child(2){
+    color: #34404b;
+}
+.related-products{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+div.related-products > div{
+    width: 23%;
+    height: 365px;
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.related-products > div > p:nth-child(2){
+    font-size: 18px;
+    color: #34404b;
+}
+.related-products > div > p:nth-child(3){
+    font-size: 18px;
+    color: #ff5912;
+}
+
+.letter{
+    float: left;
+    margin: 100px 0;
+    padding: 40px;
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+div.letter div:nth-child(1){
+    font-size: 18px;
+    color: #ff5912;
+}
+div.letter div{
+    margin-left: auto;
+}
+.letter > div > span:nth-child(1){
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.letter > div > span:nth-child(2){
+    font-size: 14px;
+    color: #7c8791;
+    font-style: italic;
+}
+div.letter div:nth-child(3){
+    margin-left: auto;
+    padding: 15px;
+    background-color: #ff5912;
+}
+div.letter :nth-child(3) > span{
+    color: #ffffff;
+}
+footer{
+    width: 100%;
+    float: left;
+}
+footer > div.container{
+    height: 250px;;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer p, footer li {
+    line-height: 2.0;
+    color: #28313b;
+    font-size: 14px;
+}
